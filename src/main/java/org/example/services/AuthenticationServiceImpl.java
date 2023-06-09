@@ -9,7 +9,7 @@ import javax.naming.AuthenticationException;
 public class AuthenticationServiceImpl implements AuthenticationService {
     private static final Logger logger = LogManager.getLogger(AuthenticationServiceImpl.class);
     public User login(String login, String password) throws AuthenticationException {
-        logger.info("Login method was called");
+        logger.info("Login method was called. Params: login = {}",login);
         User user = findByLogin(login);
         if (!user.getPassword().equals(password)) {
             throw new AuthenticationException("Username or password incorrect");

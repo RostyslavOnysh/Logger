@@ -1,1 +1,9 @@
 2023-06-07 15:43:24,073 INFO org.example.services.AuthenticationServiceImpl Login method was called
+2023-06-09 14:29:59,359 INFO org.example.services.AuthenticationServiceImpl:12 Login method was called
+2023-06-09 14:33:08,872 INFO org.example.services.AuthenticationServiceImpl:12 Login method was called. Params: login = bill
+2023-06-09 14:37:04,904 INFO org.example.services.AuthenticationServiceImpl:12 Login method was called. Params: login = bill
+2023-06-09 14:37:26,483 INFO org.example.services.AuthenticationServiceImpl:12 Login method was called. Params: login = bill
+2023-06-09 14:37:26,487 ERROR org.example.Main:17 Can`t login
+javax.naming.AuthenticationException: Username or password incorrect
+	at org.example.services.AuthenticationServiceImpl.login(AuthenticationServiceImpl.java:15) ~[classes/:?]
+	at org.example.Main.main(Main.java:15) [classes/:?]
